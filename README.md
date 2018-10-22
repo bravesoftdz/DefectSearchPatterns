@@ -1,7 +1,7 @@
 # DefectSearchPatterns
 Padrões que uso para descobrir defeitos em código.
 
-##Código sonda
+## Código sonda
 Um código fazia uma requisição HTTP e parou de funcionar. Alguma coisa de alguma forma afetou o componente de fazer requisições HTTP.
 Crio o menor código possível com uma requisição HTTP e o coloco no ponto mais inicial da execução da aplicação.
 Se a requisição funciona, vou colocando ela em pontos mais tardios da execução da aplicação, no momento que ele não funciona, significa que o defeito está em um ponto anterior.
