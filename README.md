@@ -8,13 +8,13 @@ Se a requisição funciona, vou colocando ela em pontos mais tardios da execuç�
 Sempre colocando o código no meio dos métodos, então na metade da metade, e assim por diante, se aprofundando nos submétodos até chegar no defeito.
 Descobri que era um código que descarregava a DLL de socket.
 
-```delphi
-  PROCEDURE TESTEIDHTTTP;
-  VAR
+```pascal
+  procedure TesteIdHTTP;
+  var
     lRequest :TStringStream;
     lResponse : TStringStream;
     AIdHTTP: TIdHTTP;
-  BEGIN
+  begin
     AIdHTTP := TIdHTTP.Create(nil);
     lRequest := TStringStream.Create('');
     lResponse := TStringStream.Create('');
@@ -27,7 +27,7 @@ Descobri que era um código que descarregava a DLL de socket.
       lResponse.Free();
       AIdHTTP.Free;
     end;
-  END;
+  end;
 ```
 
 ## Exclusão de código suspeito
