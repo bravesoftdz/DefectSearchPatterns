@@ -8,6 +8,7 @@ Se a requisição funciona, vou colocando ela em pontos mais tardios da execuç�
 Sempre colocando o código no meio dos métodos, então na metade da metade, e assim por diante, se aprofundando nos submétodos até chegar no defeito.
 Descobri que era um código que descarregava a DLL de socket.
 
+```delphi
   PROCEDURE TESTEIDHTTTP;
   VAR
     lRequest :TStringStream;
@@ -27,6 +28,7 @@ Descobri que era um código que descarregava a DLL de socket.
       AIdHTTP.Free;
     end;
   END;
+```
 
 ## Exclusão de código suspeito
 Um procedimento apresenta lentidão. Códigos suspeitos de causar a lentidão são comentados e se verifica se o procedimento ficou sem a lentidão. Se ficou rápido, um a um os códigos vão sendo descomentados, até ficar lento novamente. O último código descomentado é o causador do problema. Se há submétodos, reinicia-se o processo dentro do método.
