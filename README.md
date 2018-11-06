@@ -39,7 +39,7 @@ Um memory leak acontece após um código. Adiciono um comando que interrompe o m
 
 # Tipos de bugs
 
-1 - Acidentais - Fáceis de resolver
-2 - Problema de modelagem - Dificeis, mas são os mais recompensadores de se resolver. Suas soluções amadurecem o código.
+- Acidentais - Fáceis de resolver
+- Problema de modelagem - Dificeis, mas são os mais recompensadores de se resolver. Suas soluções amadurecem o código.
 
 https://twitter.com/acdlite/status/1058092028460916736
