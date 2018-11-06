@@ -35,3 +35,11 @@ Um procedimento apresenta lentidão. Códigos suspeitos de causar a lentidão s�
 
 ## Interrupção de código
 Um memory leak acontece após um código. Adiciono um comando que interrompe o método no meio, se ocorreu o memory leak, ele está antes da interrupção, se não está depois. Vai se refinando a posição da interrupção metade a metade, até encontrar o método problemático. Se ele tem submétodos, aprofunda-se neste, repetindo-se a operação.
+
+
+#Tipos de bugs
+
+1 - Acidentais - Fáceis de resolver
+2 - Problema de modelagem - Dificeis, mas são os mais recompensadores de se resolver. Suas soluções amadurecem o código.
+
+https://twitter.com/acdlite/status/1058092028460916736
