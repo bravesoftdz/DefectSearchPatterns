@@ -30,11 +30,12 @@ Descobri que era um código que descarregava a DLL de socket.
   end;
 ```
 
+## Interrupção de código
+É uma espécie de código sonda util em memory leaks.
+Um memory leak acontece após um código. Adiciono um comando que interrompe o método no meio, se ocorreu o memory leak, ele está antes da interrupção, se não está depois. Vai se refinando a posição da interrupção metade a metade, até encontrar o método problemático. Se ele tem submétodos, aprofunda-se neste, repetindo-se a operação.
+
 ## Exclusão de código suspeito
 Um procedimento apresenta lentidão. Códigos suspeitos de causar a lentidão são comentados e se verifica se o procedimento ficou sem a lentidão. Se ficou rápido, um a um os códigos vão sendo descomentados, até ficar lento novamente. O último código descomentado é o causador do problema. Se há submétodos, reinicia-se o processo dentro do método.
-
-## Interrupção de código
-Um memory leak acontece após um código. Adiciono um comando que interrompe o método no meio, se ocorreu o memory leak, ele está antes da interrupção, se não está depois. Vai se refinando a posição da interrupção metade a metade, até encontrar o método problemático. Se ele tem submétodos, aprofunda-se neste, repetindo-se a operação.
 
 
 # Tipos de bugs
