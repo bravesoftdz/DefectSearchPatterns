@@ -1,5 +1,5 @@
 # DefectSearchPatterns
-Padrões que uso para descobrir defeitos em código.
+Padrões que uso para descobrir defeitos em código. Tentativa e erro.
 
 ## Código sonda
 Um código fazia uma requisição HTTP e parou de funcionar. Alguma coisa de alguma forma afetou o componente de fazer requisições HTTP.
@@ -31,7 +31,7 @@ Descobri que era um código que descarregava a DLL de socket.
 ```
 
 ## Exclusão de código suspeito
-Um procedimento apresenta lentidão e não há uma ferramenta de profiler. Códigos suspeitos de causar a lentidão são comentados e se verifica se o procedimento ficou sem a lentidão. Se ficou rápido, um a um os códigos vão sendo descomentados, até ficar lento novamente. O último código descomentado é o causador do problema. Se há submétodos, reinicia-se o processo dentro do método.
+Um procedimento apresenta lentidão e não se quer usar um profiler. Códigos suspeitos de causar a lentidão são comentados e se verifica se o procedimento ficou sem a lentidão. Se ficou rápido, um a um os códigos vão sendo descomentados, até ficar lento novamente. O último código descomentado é o causador do problema. Se há submétodos, reinicia-se o processo dentro do método.
 
 ## Interrupção de código
 É uma espécie de código sonda util em memory leaks.
