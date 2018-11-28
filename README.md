@@ -1,5 +1,5 @@
 # DefectSearchPatterns
-Padrões que uso para descobrir defeitos em código. Tentativa e erro.
+Padrões usados para descobrir defeitos em código. Baseados em tentativa e erro até o momento.
 
 ## Código sonda
 Um código fazia uma requisição HTTP e parou de funcionar. Alguma coisa de alguma forma afetou o componente de fazer requisições HTTP.
