@@ -1,6 +1,8 @@
 # DefectSearchPatterns
 Padrões usados para descobrir defeitos em código. Baseados em isolamento da causa até o momento.
 
+- [A Field Guide to Fixing Bugs](https://sourcery.ai/blog/how-to-find-bugs/)
+
 ## Código sonda
 Um código fazia uma requisição HTTP e parou de funcionar. Alguma coisa de alguma forma afetou o componente de fazer requisições HTTP.
 Crio o menor código possível com uma requisição HTTP e o coloco no ponto mais inicial da execução da aplicação.
